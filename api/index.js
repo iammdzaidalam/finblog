@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 const salt = bycrypt.genSaltSync(10);
 
 app.use(cookieParser());
-app.use(cors({credentials:true, origin:'http://localhost:3000'}));
+app.use(cors({credentials:true, origin:true}));
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://ZaidAlam:Zaid786$@finblog.xyei5.mongodb.net/?retryWrites=true&w=majority&appName=Finblog');
